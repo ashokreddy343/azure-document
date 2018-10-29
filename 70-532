@@ -1,0 +1,65 @@
+Design and implement webstes
+	Deploy websites
+		Defininf deployment slots
+			total of five deployment slots
+			staged deployment
+			Incremental deployment
+			Rolling back deployment
+			all deployment slots for a given website share the same web hosting plan and created
+			within the same VM(virtual machine) isntance that is hosting the production slot
+			Because same VM instance is used for all slots.
+			you cannot create a deployment slot with the Free,Shared, and Basic modes.
+		Creating hosting plans
+			Each web hosting plan is configured with a pricing tier,and each tier describes its
+			own set of capabilities and cost.
+			A web hosting plan is unique to the region,resource group and subscription.
+			Web hosting plans are create as a part of website creation and are not created directly.
+			Multiple websites can be hosted within a single web hosting plan
+Why Virtual Networks?
+	Virtual networks act as a communication channel between resources launched in the cloud.
+	Why virtual Because there are no physical wires involved in connecting these resources.
+	An VNet is a representation of your own network in the cloud.
+	it is a logical isolation of the Azure cloud dedicated to your subscription
+
+What are Azure Subnets ?			
+	Each Virtual Network can be divided into subparts,these sub parts are called subnets.
+	Subnets are further configured using Network Security Groups.
+Network Security Groups
+	NSGs are just like firewalls,which filter the traffic coming in,and going out of your VMs.
+	These settings can be done easily using Azure.
+
+
+
+Microsoft Azure Authentication Scenarios for Developers
+=======================================================
+Azure Authentication and Azure Active Directory
+	What is wrong with Active Directory ?
+		Kerberos,NTLM,Group Policies protocal used to authenticate users
+		it works very well for its inteended use
+		AD is great for on-premises
+		Ad is not suitable for internet scale and requirments
+	What is Azure AD ?
+		Azure Ad is not a replacement for AD
+		it can work with AD,it does not need an AD
+		suitable for the cloud
+		supports modern authentication protocols
+		Comes with SDKs for most platforms
+		support B2C,B2B,B2E,and numerous Saas applications
+		you can sync on-premises identites to the cloud
+		you can federate authentication to on-premises
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
